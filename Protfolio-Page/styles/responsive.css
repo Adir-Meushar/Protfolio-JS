@@ -139,8 +139,12 @@
     width: 55px;
     height: 49px;
   }
+  .about{
+    height: 75vh;
+  }
   #form-box {
     background-position: 54% 94%;
+    height: 75vh;
   }
   #form-box h2 {
     font-size: 2rem;
