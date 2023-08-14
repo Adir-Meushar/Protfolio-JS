@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Memory-Game </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+     <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Protfolio-Page/favicon/thinking.png"
+    />
+</head>
+
+<body>
+    <h1>Memory-Game</h1>
+    <p> Rounds: <b class="counter">0</b> <span class="margin"></span> Timer: <b class="timer">00:00</b></p>
+    <div class="frame">
+        <div class="board"></div>
+    </div>
+
+    <div id="player-1">
+        <h2>Player-1</h2>
+        <input autocomplete="off" id="inputPlayer1" placeholder="Enter Your Name" type="text">
+        <span id="attempts1">Attempts:</span>
+        <span id="score1">Score:</span>
+    </div>
+    <div id="player-2">
+        <h2>Player-2</h2>
+        <input autocomplete="off" id="inputPlayer2" placeholder="Enter Your Name" type="text">
+        <span id="attempts2">Attempts:</span>
+        <span id="score2">Score:</span>
+    </div>
+    <img src="images/memory-img.png" id="memory-img"></img>
+    <div id="game-size"><span>:Choose Game-Board Size</span>
+        <div id="select">
+            <span id="large">Large</span>
+            <span id="medium">Medium</span>
+            <span id="small">Small</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Snake</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Protfolio-Page/favicon/snake.png"
+    />
+  </head>
+
+  <body onload="createBoard()">
+    <div id="upperPage">
+      <div id="sound"></div>
+      <div id="box-timer-header">
+        <h1>Snake</h1>
+        <div id="timer"></div>
+      </div>
+      <div id="score">
+        <div id="local-score">
+          <span>:Highest-Score</span>
+          <span id="Highest-Score"></span>
+          <button id="btn-reset">Reset</button>
+        </div>
+        <h2>:Score</h2>
+        <div id="score-num"></div>
+      </div>
+    </div>
+    <div id="start-game-btn-box">
+      <button id="startGame">Start Game</button>
+    </div>
+
+    <div class="frame">
+      <div class="board"></div>
+    </div>
+  </body>
+</html>

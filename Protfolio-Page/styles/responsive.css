@@ -1,0 +1,153 @@
+@media (min-width: 1151px) and (max-width: 1400px) {
+  #projects-container {
+    width: 77vw;
+  }
+}
+
+@media (max-width: 1150px) {
+  #projects-container {
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+    width: 65vw;
+  }
+
+  .project-container:nth-child(7),
+  .project-container:nth-child(8) {
+    margin: 0 auto;
+  }
+
+  .project-container {
+    max-width: 300px;
+    min-width: 280px;
+  }
+
+  form {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+  }
+
+  .about p,
+  .page-header p {
+    width: 75vw;
+  }
+
+  #projects-container {
+    width: 75vw;
+  }
+
+  .project-tech img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project-container {
+    width: 95%;
+    max-width: 300px;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+  }
+
+  form {
+    width: 60vw;
+  }
+  footer p,
+  footer span {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .page-header {
+    background-size: 150%;
+    background-position: bottom;
+  }
+  .about p {
+    font-size: 0.8rem;
+  }
+  #projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40vh;
+  }
+
+  .contact {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  form {
+    width: 80vw;
+  }
+
+  #form-box {
+    background-size: 24%;
+    background-position: 93% 77%;
+    height: 65vh;
+  }
+
+  #form-box p {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .fa {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  #projects-container {
+    width: 84vw;
+  }
+
+  .project-tech img {
+    width: 55px;
+    height: 49px;
+  }
+  #form-box {
+    background-position: 54% 94%;
+  }
+  #form-box h2 {
+    font-size: 2rem;
+  }
+  #form-box p {
+    width: 100%;
+    font-size: 0.9rem;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokedex</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Protfolio-Page/favicon/pokeball.ico"
+    />
+  </head>
+
+  <body>
+    <h1>My Pokedex</h1>
+    <div id="page-container">
+      <div id="pokedex-box">
+        <div id="pokedex">
+          <!-- left-side -->
+          <div id="pokemon-info">
+            <img
+              id="pokemon-img"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+              alt=""
+            />
+            <div id="pokemon-types">
+              <span class="type-box first1">GRASS</span>
+              <span class="type-box first2">POISON</span>
+            </div>
+            <div id="pokemon-description"></div>
+          </div>
+          <!-- right-side -->
+          <div id="pokemon-list"></div>
+        </div>
+        <div class="btn-box">
+          <button id="gen1-button">Generation-1</button>
+          <button id="gen2-button">Generation-2</button>
+          <button id="gen3-button">Generation-3</button>
+        </div>
+        <div id="saveClearBtnBox">
+          <button id="clear">Clear Favorite Pokemons</button>
+          <button id="save">Save Favorite Pokemons</button>
+        </div>
+      </div>
+      <div id="favorite">
+        <div id="favorite-msg">
+          <h1>Favorite Pokemons</h1>
+          <span>Double click on pokemon img to add to favorite</span>
+        </div>
+      </div>
+    </div>
+    <div class="loaderFrame">
+      <div class="loader"></div>
+    </div>
+    <div id="snackbar"></div>
+
+    <script defer src="Pokedex.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  background-image: url("board.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #bef7ff;
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#container {
+  font-family: cursive;
+  text-align: center;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+  transform: translate(-5px, 71px);
+}
+
+h1 {
+  color: #03454e;
+}
+
+h2 {
+  margin-top: 68px;
+  color: #fff;
+}
+
+button {
+  margin-bottom: 15px;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #0ea2b5;
+  color: #fff;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+button:hover {
+  letter-spacing: 1.2px;
+  color: #0ea2b5;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgb(14, 57, 66);
+}
+
+table {
+  border-collapse: collapse;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  background-color: #8affd9;
+  font-weight: bold;
+}
+
+th {
+  background-color: #00767b8c;
+  color: black;
+}
+
+@media screen and (max-width: 570px) {
+  #cellContainer {
+    transform: translate(-5px, 90px);
+  }
+
+  h2 {
+    margin-top: 87px;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 450px) {
+  body {
+    background-size: 98vw;
+  }
+  #cellContainer {
+    width: 180px;
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    line-height: 60px;
+  }
+  #statusText {
+    font-size: 1rem;
+  }
+  button {
+    transform: translateY(150px);
+  }
+}

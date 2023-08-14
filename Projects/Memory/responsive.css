@@ -1,0 +1,134 @@
+@media screen and (max-width:1150px) {
+
+    #player-1,
+    #player-2 {
+        width: 15vw;
+        height: 12vh;
+        font-size: .8rem;
+    }
+
+    h2 {
+        font-size: .9rem;
+    }
+
+    .board div {
+        width: 70px;
+        height: 70px;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+    #player-1 {
+        top: 4%;
+        left: 4%;
+    }
+
+    #player-2 {
+        top: 4%;
+        right: 4%;
+    }
+
+    #game-size {
+        font-size: 1rem;
+    }
+
+    #select {
+        margin-top: 15%;
+    }
+
+    #select span {
+        height: 36px;
+        width: 25%;
+        padding-top: 16px;
+    }
+}
+
+@media screen and (max-width:870px) {
+
+    #player-1,
+    #player-2 {
+        width: 17vw;
+        height: 11vh;
+        font-size: .7rem;
+    }
+
+    h2 {
+        font-size: .8rem;
+    }
+
+    .board div {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    #player-1 {
+        top: 1%;
+        left: 1%;
+    }
+
+    #player-2 {
+        top: 1%;
+        right: 1%;
+    }
+
+    #game-size {
+        height: 15vh;
+        font-size: .8rem;
+    }
+
+    #select {
+        margin-top: 10%;
+    }
+
+    #select span {
+        height: 28px;
+        width: 31%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .board div {
+        width: 45px;
+        height: 45px;
+        font-size: 17px;
+
+    }
+
+    #player-1,
+    #player-2 {
+        width: 26vw;
+        height: 11vh;
+        font-size: .7rem;
+    }
+
+    #player-1 {
+        top: 69%;
+        left: 1%;
+    }
+
+    #player-2 {
+        top: 69%;
+        right: 1%;
+    }
+
+    #game-size {
+        position: absolute;
+        top: 30%;
+        right: 31%;
+        width: 35vw;
+    }
+
+    #select span {
+        height: 28px;
+        width: 30%;
+        font-size: .7rem;
+
+    }
+
+    #select span:hover,
+    #select span.selected {
+        letter-spacing: 1px;
+    }
+}

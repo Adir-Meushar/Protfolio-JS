@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    direction: rtl;
+    padding-bottom: 200px;
+    background-image: url('./images/abstract-panel-texture-material-wallpaper-preview.jpg');
+    text-transform: capitalize;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+#memory-img {
+    width: 24vw;
+    position: absolute;
+    left: 38vw;
+    top: 18vh;
+    opacity: 0.2;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 1rem;
+}
+
+.frame {
+    text-align: center;
+}
+
+h2 {
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #4ab5c3;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f90b8;
+}
+
+.board {
+    display: inline-grid;
+    overflow: hidden;
+    background-color: #e4e4e4;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 12px;
+    direction: ltr;
+}
+
+.board div {
+    width: 90px;
+    height: 90px;
+    background-color: #3bbed5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: inset 0px 0px 8px black;
+    cursor: pointer;
+}
+
+.board div span {
+    display: none;
+    pointer-events: none;
+}
+
+.board div.showing {
+    background: #002663;
+    transform: matrix3d(1, 0, 4, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.board div.showing span {
+    display: initial;
+}
+
+.active {
+    background-color: #5919c7 !important;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.winner {
+    font-size: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: zoom-in 2s;
+}
+
+.board div.hidden {
+    opacity: 0;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+p .margin {
+    margin: 0 12px;
+}
+
+.cheat {
+    opacity: 0.3;
+}
+
+#player-1,
+#player-2 {
+    width: 12vw;
+    height: 15vh;
+    background-color: #fff;
+    border: black solid 5px;
+    border-radius: 20px;
+    padding: 5px;
+    direction: ltr;
+    transition: all 1.5s;
+    font-size: .8rem;
+    position: relative;
+}
+
+#player-1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+#player-2 {
+    position: relative;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+#player-1 span {
+
+    font-weight: bold;
+    padding: 5px;
+}
+
+#player-2 span {
+    font-weight: bold;
+    padding: 5px;
+}
+
+input {
+    width: 90%;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+input:focus {
+    outline: none;
+}
+
+#game-size {
+    width: 30vw;
+    height: 22vh;
+    background-color: #fff;
+    position: absolute;
+    bottom: 5%;
+    left: 36%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+
+#select {
+    margin-top: 10%;
+}
+
+#select span {
+    display: inline-block;
+    border: solid 1px black;
+    height: 40px;
+    width: 27%;
+    padding-top: 25px;
+    font-weight: bold;
+    transition: all .5s;
+
+}
+
+#select span:hover,
+#select span.selected {
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+
+.winner {
+    color: #567eaa;
+    font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}

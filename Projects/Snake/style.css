@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+
+html {
+  min-height: 100%;
+}
+
+body {
+  direction: rtl;
+  /* background-color: #383838; */
+  padding-bottom: 200px;
+  background: linear-gradient(to right, #8dc26f, #76b852);
+  height: 90vh;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Rubik", sans-serif !important;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #013d0a;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-left: 10px;
+}
+
+.frame {
+  width: 80%;
+  max-width: 900px;
+  min-height: 300px;
+  background-color: #b7141400;
+  margin: auto;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.board {
+  display: inline-grid;
+  border-radius: 3px;
+  border: 4px solid rgb(11, 41, 11);
+  overflow: hidden;
+  background-color: rgba(240, 255, 255, 0.337);
+  background-image: url("./images/grass.jpg");
+}
+
+.board div {
+  width: 12px;
+  height: 12px;
+}
+
+.snake {
+  background-color: rgb(12, 205, 227);
+  border: solid 1px black;
+  border-radius: 20px;
+}
+
+.head {
+  background-color: rgb(3, 94, 94);
+}
+
+.head.up {
+  border-radius: 6px 6px 0 0;
+}
+
+.head.right {
+  border-radius: 0 6px 6px 0;
+}
+
+.head.down {
+  border-radius: 0 0 6px 6px;
+}
+
+.head.left {
+  border-radius: 6px 0 0 6px;
+}
+
+.apple:after {
+  content: "🍎";
+  position: relative;
+  top: -5px;
+  right: -3px;
+  font-size: 15px;
+}
+
+#score {
+  text-align: center;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  padding: 5px;
+  border: solid 3px #013d0a;
+  color: #013d0a;
+  margin-right: 100px;
+}
+
+#score h2 {
+  margin-top: 4vh;
+}
+
+button {
+  background-color: #005000;
+  color: #51ff42;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+#score button {
+  width: 35%;
+  letter-spacing: 1px;
+  margin-left: 15%;
+}
+
+button:hover {
+  background-color: #51ff42;
+  color: #005000;
+  letter-spacing: 1px;
+}
+
+#score-num {
+  position: absolute;
+  bottom: 0;
+  width: 97%;
+  height: 60px;
+  border: none;
+  border-top: 2px solid #013d0a;
+  font-size: 2rem;
+}
+
+#local-score {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5%;
+  font-weight: bold;
+}
+
+#timer {
+  width: 100px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+#sound {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#sound img {
+  width: 50px;
+  height: 50px;
+}
+
+.game-over {
+  font-size: 3rem;
+  color: #013d0a;
+  width: 40vw;
+  height: 10vh;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  right: 30%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-over button {
+  width: 120px;
+}
+
+#upperPage {
+  padding: 20px;
+  height: 25vh;
+  width: 98vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box-timer-header {
+  margin-left: 17%;
+  margin-bottom: 3%;
+}
+
+#start-game-btn-box {
+  width: 120px;
+  margin: 0 auto;
+}
+
+#startGame {
+  width: 110px;
+  transform: translateY(-20px);
+}
+
+@media (max-width: 1200px) {
+  .board div {
+    width: 10px;
+    height: 10px;
+  }
+
+  .apple:after {
+    font-size: 13px;
+  }
+
+  #score {
+    width: 30%;
+    margin-right: 0;
+  }
+
+  .game-over {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 770px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  #score {
+    font-size: 0.8rem;
+    width: 25%;
+  }
+
+  #score button {
+    width: 40%;
+    margin-left: 0;
+    letter-spacing: 0;
+  }
+
+  #sound {
+    width: 50px;
+  }
+
+  .game-over {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 770px) {
+  #score {
+    width: 19%;
+  }
+  #score h2 {
+    margin-top: 6vh;
+  }
+  #score-num {
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  #score button {
+    position: absolute;
+    top: 23%;
+    left: 28%;
+    width: 50%;
+  }
+
+  #box-timer-header {
+    margin-left: 6%;
+  }
+}
+
+@media (max-width: 560px) {
+  .board div {
+    width: 6px;
+    height: 6px;
+  }
+
+  .apple:after {
+    font-size: 8px;
+  }
+
+  #score {
+    position: absolute;
+    bottom: 13%;
+    left: 35%;
+    width: 150px;
+    height: 140px;
+  }
+
+  #score button {
+    top: 17%;
+    left: 30%;
+    width: 35%;
+  }
+
+  h1,
+  .game-over {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 300px) {
+  .frame {
+    margin-left: 50px;
+  }
+
+  #score {
+    position: absolute;
+    bottom: 200px;
+    left: 55px;
+    width: 150px;
+    height: 140px;
+  }
+
+  h1,
+  .game-over,
+  h2 {
+    font-size: 1rem;
+  }
+}
