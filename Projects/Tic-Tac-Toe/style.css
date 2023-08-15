@@ -80,20 +80,25 @@ th {
 
 @media screen and (max-width: 570px) {
   #cellContainer {
-    transform: translate(-5px, 90px);
+    transform: translate(-5px, 69px);
   }
-
-  h2 {
-    margin-top: 87px;
+  #statusText {
+    font-size: 0.9rem;
+    transform: translateY(3px);
+  }
+  table,
+  button {
+    transform: translateY(35px);
   }
 }
 
-@media screen and (min-width: 330px) and (max-width: 450px) {
+@media screen and (min-width: 330px) and (max-width: 430px) {
   body {
     background-size: 98vw;
   }
   #cellContainer {
     width: 180px;
+    transform: translate(-5px, 71px);
   }
 
   .cell {
@@ -101,11 +106,5 @@ th {
     height: 60px;
     font-size: 35px;
     line-height: 60px;
-  }
-  #statusText {
-    font-size: 1rem;
-  }
-  button {
-    transform: translateY(150px);
   }
 }
