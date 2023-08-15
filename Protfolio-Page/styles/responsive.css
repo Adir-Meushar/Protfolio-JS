@@ -2,6 +2,15 @@
   #projects-container {
     width: 77vw;
   }
+  form {
+    width: 40vw;
+  }
+  #form-box {
+    height: 85vh;
+  }
+  form button {
+    margin-top: 10%;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -23,6 +32,12 @@
 
   form {
     width: 50vw;
+  }
+  #form-box {
+    height: 85vh;
+  }
+  form button {
+    margin-top: 10%;
   }
 }
 
@@ -94,6 +109,9 @@
     background-size: 150%;
     background-position: bottom;
   }
+  .about {
+    height: 75vh;
+  }
   .about p {
     font-size: 0.8rem;
   }
@@ -119,7 +137,6 @@
   #form-box {
     background-size: 24%;
     background-position: 93% 77%;
-    height: 65vh;
   }
 
   #form-box p {
@@ -139,12 +156,11 @@
     width: 55px;
     height: 49px;
   }
-  .about{
-    height: 75vh;
+  .about {
+    height: 95vh;
   }
   #form-box {
     background-position: 54% 94%;
-    height: 75vh;
   }
   #form-box h2 {
     font-size: 2rem;
