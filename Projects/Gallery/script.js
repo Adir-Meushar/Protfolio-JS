@@ -122,11 +122,11 @@ const g1 = new Gallery(
 );
 const g2 = new Gallery(
   "gallery2",
-  "images/big-cats/tiger.jpg",
+  "./images/big-cats/tiger.jpg",
   "./images/big-cats/lion.jpg",
   "./images/big-cats/leopard.jpg",
   "./images/big-cats/jaguar.jpg",
-  "images/big-cats/cheetah.jpg"
+  "./images/big-cats/cheetah.jpg"
 );
 const g3 = new Gallery(
   "gallery3",
