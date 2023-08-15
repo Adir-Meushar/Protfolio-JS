@@ -49,8 +49,8 @@ h1 {
 }
 
 .board div {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
 }
 
 .snake {
@@ -90,7 +90,7 @@ h1 {
 #score {
   text-align: center;
   position: relative;
-  width: 20%;
+  width: 240px;
   height: 100%;
   padding: 5px;
   border: solid 3px #013d0a;
@@ -185,7 +185,7 @@ button:hover {
 
 #upperPage {
   padding: 20px;
-  height: 25vh;
+  height: 27vh;
   width: 98vw;
   display: flex;
   flex-direction: row-reverse;
@@ -194,7 +194,7 @@ button:hover {
 }
 
 #box-timer-header {
-  margin-left: 17%;
+  margin-left: 13%;
   margin-bottom: 3%;
 }
 
@@ -209,9 +209,12 @@ button:hover {
 }
 
 @media (max-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+  }
   .board div {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
   }
 
   .apple:after {
@@ -219,7 +222,6 @@ button:hover {
   }
 
   #score {
-    width: 30%;
     margin-right: 0;
   }
 
@@ -229,33 +231,16 @@ button:hover {
 }
 
 @media (max-width: 770px) {
-  h1 {
-    font-size: 2.4rem;
+  #sound img {
+    width: 30px;
+    height: 30px;
   }
-
   #score {
     font-size: 0.8rem;
     width: 25%;
   }
-
-  #score button {
-    width: 40%;
-    margin-left: 0;
-    letter-spacing: 0;
-  }
-
-  #sound {
-    width: 50px;
-  }
-
-  .game-over {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 770px) {
   #score {
-    width: 19%;
+    width: 165px;
   }
   #score h2 {
     margin-top: 6vh;
@@ -270,14 +255,27 @@ button:hover {
     top: 23%;
     left: 28%;
     width: 50%;
+    margin-left: 0;
+    letter-spacing: 0;
   }
 
   #box-timer-header {
     margin-left: 6%;
   }
+
+  #sound {
+    width: 50px;
+  }
+
+  .game-over {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 560px) {
+  #upperPage {
+    height: 20vh;
+  }
   .board div {
     width: 6px;
     height: 6px;
@@ -289,10 +287,10 @@ button:hover {
 
   #score {
     position: absolute;
-    bottom: 13%;
-    left: 35%;
-    width: 150px;
-    height: 140px;
+    bottom: 5%;
+    left: 25%;
+    width: 50%;
+    height: 150px;
   }
 
   #score button {
@@ -307,17 +305,9 @@ button:hover {
   }
 }
 
-@media (max-width: 400px) and (min-width: 300px) {
+@media screen and (min-width: 330px) and (max-width: 400px) {
   .frame {
     margin-left: 50px;
-  }
-
-  #score {
-    position: absolute;
-    bottom: 200px;
-    left: 55px;
-    width: 150px;
-    height: 140px;
   }
 
   h1,
