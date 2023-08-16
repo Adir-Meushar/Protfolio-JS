@@ -53,24 +53,24 @@ body {
 .page-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100vw;
-  height: 70vh;
+  height: 85vh;
   background-color: #e3f2ff;
 }
 
 .page-header h1 {
   font-size: 3rem;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-top: 5%;
   color: #081248f2;
 }
 
 .page-header p {
   width: 30vw;
   text-align: center;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .button-box {
@@ -210,6 +210,10 @@ footer .fa {
   .contact {
     font-size: 0.9rem;
   }
+  footer p,
+  footer span {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 750px) {
@@ -223,7 +227,9 @@ footer .fa {
     grid-template-columns: repeat(2, 1fr);
     height: 40vh;
   }
-
+  footer .fa {
+    font-size: 1.5rem;
+  }
   .button-box {
     width: 80%;
   }
@@ -234,10 +240,13 @@ footer .fa {
     font-size: 1rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .page-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
+    font-size: 2.4rem;
+    margin-top: 20%;
+  }
+  .page-header p {
+    font-size: 0.9rem;
   }
   .img-box {
     width: 97vw;

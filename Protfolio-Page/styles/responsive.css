@@ -128,6 +128,7 @@
   .contact {
     width: 100%;
     font-size: 1rem;
+    transform: translateX(0);
   }
 
   form {
@@ -161,6 +162,7 @@
   }
   #form-box {
     background-position: 54% 94%;
+    height: 89vh;
   }
   #form-box h2 {
     font-size: 2rem;

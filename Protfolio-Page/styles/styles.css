@@ -63,6 +63,7 @@ a {
 .navbar-links li a.active,
 .navbar-links li a:hover {
   transform: scale(1.07);
+  color: #083183;
 }
 
 .toggle-button {
@@ -163,7 +164,7 @@ a {
 .about {
   width: 50vw;
   margin: 0 auto;
-  height: 63vh;
+  height: 75vh;
   margin-top: 5vh;
   display: flex;
   flex-direction: column;
