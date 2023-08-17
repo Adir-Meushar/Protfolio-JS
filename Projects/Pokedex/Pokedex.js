@@ -1,3 +1,4 @@
+// The app works but during the initial app launch, the application takes some time fetching all the Pokémons.//
 const pokemonCount = 386;
 const pokedex = {};
 const pokemonList = document.getElementById("pokemon-list");
