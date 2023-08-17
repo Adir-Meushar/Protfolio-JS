@@ -26,7 +26,7 @@ Description: The classic snake game where players control a snake to eat food an
 
 Pokedex with API(Bonus)
 Description: An interactive Pokedex application that retrieves and displays pokemons with information about them from an API,
-During the initial app launch, the application takes some time to fetching all the Pokémons.
+During the initial app launch, the application takes some time fetching all the Pokémons.
 
 Image Gallery 
 Description: An image gallery built using OOP principles, allowing users to view and navigate through a collection of images.
